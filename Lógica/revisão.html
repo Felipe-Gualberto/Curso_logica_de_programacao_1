@@ -1,0 +1,30 @@
+
+É comum programas terem uma tela de login, isto é, a tela que identifica o usuário no sistema. Para que o acesso seja permitido, o nome de usuário e senha devem ser iguais aos valores armazenados pela aplicação, independente do local onde as informações foram guardadas. Também não é raro a prática de permitir no máximo três tentativas e a partir da terceira o sistema recusar-se a identificar o usuário e notifica ao administrador do sistema ou até mesmo ao dono da conta.
+
+Segue o código que efetua o login, mas ATENÇÃO, ele só dá uma tentativa para o usuário:
+
+<script>
+
+	function pulaLinha() { 
+
+		document.write("<br> <br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+	var contador = 1;
+	
+	//while(contador <= 10) {
+    	//alert("Contador atual: " + contador);
+    	//contador = contador + 1;
+	//}
+
+	for(contator = 1; contator <=10; contator++) {
+		alert("Contator atual: " + contator)
+	}
+
+
+</script>

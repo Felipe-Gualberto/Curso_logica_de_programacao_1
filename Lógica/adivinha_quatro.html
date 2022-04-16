@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<input/>
+<button> Digite ao lado um número. </button>
+
+<script>
+
+	var segredos = [3,4,6];
+	var input = document.querySelector("input");
+	input.focus();
+	
+	function verifica () {
+
+		var achou = false;
+
+		for (var senha = 0; senha < segredos.length; senha++) {
+
+			if (input.value == segredos[senha]) {
+
+				alert("Você ACERTOU!!");
+				achou = true;
+				break;
+			
+				} 
+
+			}
+
+				if (achou == false) {
+
+					alert("Você ERROU!!");
+				}
+
+		
+		input.value = ""
+		input.focus();
+
+		}
+		
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+	//document.write(segredo);
+
+</script>

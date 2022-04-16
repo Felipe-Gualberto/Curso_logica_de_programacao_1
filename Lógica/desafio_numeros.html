@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br> <br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha ();
+	}
+
+	var começo = 30;
+	var par = começo + 2;
+
+
+	while(começo <= 40 ) {
+
+		if (começo == 33) {
+
+			começo = começo + 1;
+		} 
+		else if (começo == 37) {
+
+			começo = começo + 1;
+		}
+		else {
+
+			mostra(começo);
+			começo = começo + 1;
+		}
+	}
+
+	mostra("FIM!");
+	
+
+</script>

@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulalinha() {
+
+		document.write('<br> <br>');
+	}
+
+	function mostra(frase) {
+		
+		document.write(frase);
+		pulalinha();
+	}
+
+	function calculaImc(altura, peso) {
+
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+
+	var nome1 = prompt('Qual seu nome?');
+	var peso1 = prompt('Qual seu peso, ' + nome1);
+	var altura1 = prompt('Qual sua altura, ' + nome1);
+
+	var nome2 = prompt('Qual o seu nome?');
+	var peso2 = prompt('Digite o seu peso, ' + nome2);
+	var altura2 = prompt('Digite a sua altura, ' + nome2);
+
+	var resultado1 = calculaImc(altura1, peso1);
+	var resultado2 = calculaImc(altura2, peso2);
+
+	mostra(nome1 + ' Seu IMC é: ' + resultado1);
+	mostra(nome2 + ' Seu IMC é: ' + resultado2);
+
+	var soma = (resultado1 + resultado2);
+	mostra('A soma entre os dois IMCs é: ' + soma);
+
+	if (resultado1 < 18.5) {
+
+		mostra(nome1 + ', você tá abaixo do peso.');
+	};
+
+	if (resultado1 >= 18.5 && resultado1 <35) {
+
+		mostra(nome1 + ', você tá no peso ideal.' );
+	};
+
+	if (resultado1 >= 35) { 
+
+		mostra(nome1 + ', você tá acima do peso.');
+
+	}
+	
+
+</script>

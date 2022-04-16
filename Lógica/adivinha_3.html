@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<input/>
+<button> Digite ao lado um número. </button>
+
+<script>
+
+
+	var segredo = Math.round(Math.random() * 10);
+	var input = document.querySelector("input");
+	input.focus();
+	
+	function butão () {
+
+		if (input.value == segredo) {
+
+			alert("Você ACERTOU!!");
+		
+		} else {
+
+			alert("Você ERROU!!");
+		}
+		
+		input.value = ""
+		input.focus();
+	}
+
+	var button = document.querySelector("button");
+
+	button.onclick = butão;
+
+	//document.write(segredo);
+
+</script>

@@ -1,0 +1,33 @@
+<meta charset='UTF-8'>
+
+<script>
+
+	function pularLinha() {
+		
+		document.write("<br> <br>");
+
+	}
+
+	function mostre(frase) {
+
+		document.write(frase);
+		pularLinha;
+	}
+
+	function calcula (idade1, idade2) {
+
+		return 1 * idade1 + idade2;
+		
+	}
+
+	var nome1 = prompt('Nome da primeira pessoa?')
+	var nome2 = prompt('Nome da segunda pessoa?')
+	
+	var primeiraIdade = prompt(nome1 + ', qual a sua idade?');
+	var segundaIdade = prompt(nome2 + ', qual a sua idade?');
+
+	var resultado = calcula (primeiraIdade, segundaIdade);
+
+	document.write('A soma das idades de '+ nome1 + " e " , nome2 +'é: ' + resultado);
+
+</script>

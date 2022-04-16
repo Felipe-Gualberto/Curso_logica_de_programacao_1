@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulalinha() {
+
+		document.write('<br> <br>');
+	}
+
+	function mostra(frase) {
+		
+		document.write(frase);
+		pulalinha();
+	}
+	function sorteia () {
+
+		return (Math.round(Math.random() * 100));
+	}
+
+	var numeroPensado = sorteia ()
+	var chute = parseInt(prompt("Tente acertar qual número escolhi entre 0 e 100."));
+
+	if (chute == numeroPensado) {
+
+		mostra("Você acertou!");
+	
+	} else {
+
+		mostra("Você errou! Eu pensei no número: " + numeroPensado );
+		
+		if(chute < numeroPensado) {
+
+			mostra(chute + " é menor que " + numeroPensado);
+
+		} else {
+
+			mostra(chute + " é maior que " + numeroPensado);
+		}
+	}
+	
+
+</script>

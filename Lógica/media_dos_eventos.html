@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br> <br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadeDeEventos = parseInt(prompt("Quantidade de eventos no mês"));
+    //var numero = 1;
+    var totalgasto = 0;
+
+    //while(numero <= quantidadeDeEventos) {
+        //var gastos = parseInt(prompt("Valor gasto no evento:"));
+        //totalgasto = totalgasto + gastos;
+        //numero++;
+    //}
+
+    for(numero = 1; numero <= quantidadeDeEventos; numero++) {
+
+        var gasto = parseInt(prompt("Valor gasto no evento"));
+        totalgasto = totalgasto + gasto;
+    }
+
+    mostra('O total gasto nos eventos foi ' + totalgasto);
+    var media = totalgasto / quantidadeDeEventos;
+    mostra("A media gasta por evento foi " + media); 
+
+</script>
